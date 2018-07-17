@@ -24,3 +24,11 @@ $('div').mouseout(function () {
   $(event.currentTarget).css('background-color', 'red');
 }) 
  
+$('p').click(function(){
+  $('p').css('color', getRandomColor());
+})
+
+function getRandomColor() {
+  let randColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+  return randColor;
+}
