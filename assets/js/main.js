@@ -11,9 +11,12 @@ $('.btn2').click(function () {
 })
 
 let div = $('<div></div>').appendTo('body');
-$('div').height('100px');
-$('div').width('300px');
-$('div').css('background-color', 'red');
+
+$('div').css({
+  'height': '100px',
+  'width':  '300px',
+  'background-color':  'red'
+});
 $('div').mouseover(function () {
   $(event.currentTarget).css('background-color', 'blue');
 }) 
